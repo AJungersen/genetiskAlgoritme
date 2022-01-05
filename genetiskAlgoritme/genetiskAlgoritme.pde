@@ -6,7 +6,7 @@ void draw(){
 println("Hello world");
 }
 
-ArrayList<Item> getItems(){
+Item getItems(int n){
   ArrayList<Item> listOfItems = new ArrayList<Item>();
   listOfItems.add(new Item("kort", 150, 90));
   listOfItems.add(new Item("kompas", 35, 130));
@@ -32,4 +32,6 @@ ArrayList<Item> getItems(){
   listOfItems.add(new Item("bog", 35, 130));
   listOfItems.add(new Item("notesbog", 200, 1530));
   listOfItems.add(new Item("telt", 160, 500));
+  
+  return listOfItems.get(n);
 }
