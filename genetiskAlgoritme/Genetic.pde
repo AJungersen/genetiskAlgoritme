@@ -7,10 +7,14 @@ class Genetic{//backpack
   }
   public ArrayList<Item> makeNew(){
     ArrayList<Item> newGen = itemList;
-    if(random(2) == 1){
+    if(random(3) == 1){
       newGen.add(getItems(int(random(itemNumber))));
-    } else {
+    } else if(random(2) == 1){
+        newGen.remove(random(newGen.size()));
+    }
+    else{
       newGen.remove(random(newGen.size()));
+      newGen.add(getItems(int(random(itemNumber))));
     }
     return newGen;
   }
