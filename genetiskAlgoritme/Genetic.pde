@@ -8,7 +8,7 @@ class Genetic{
   public ArrayList<Item> makeNew(){
     ArrayList<Item> newGen = itemList;
     if(random(2) == 1){
-      newGen.add(getItems(random(itemNumber)));
+      newGen.add(getItems(int(random(itemNumber))));
     } else {
       newGen.remove(random(newGen.size()));
     }
