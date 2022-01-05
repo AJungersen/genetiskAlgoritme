@@ -1,7 +1,7 @@
-class Genetic{
+class Genetic{//backpack
   ArrayList<Item> itemList;
   float score;
-  Genetic(ArrayList<Item> iList){
+  Genetic(ArrayList<Item> iList){//takes the arraylist of items
     itemList.addAll(iList);
     score = 0;
   }
