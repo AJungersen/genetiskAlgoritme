@@ -1,3 +1,5 @@
+float itemNumber = 15;
+
 void setup(){
 
 }
@@ -34,4 +36,11 @@ Item getItems(int n){
   listOfItems.add(new Item("telt", 150, 2000));
   
   return listOfItems.get(n);
+}
+
+void generateGeneration(ArrayList<Genetic> W){
+  ArrayList<Genetic> next = new ArrayList();
+  for(int i = 0; i < W.size(); i++){
+    W.get(i).
+  }
 }
