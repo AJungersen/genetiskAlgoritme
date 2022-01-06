@@ -38,6 +38,12 @@ Item getItems(int n){
   return listOfItems.get(n);
 }
 
+public void evaluateGen(ArrayList<Genetic> R){
+  for(int i = 0; i < R.size(); i++){
+    R.getScore()
+  }
+}
+
 void generateGeneration(ArrayList<Genetic> W){
   ArrayList<Genetic> next = new ArrayList();
   for(int i = 0; i < W.size(); i++){
