@@ -3,7 +3,7 @@ class Genetic{
   float score;
   Genetic(ArrayList<Float> iList){
     itemList = iList;
-    score = 0;
+    score = getScore(iList);
   }
   public ArrayList<Float> makeNew(){
     ArrayList<Float> newGen = itemList;
@@ -12,9 +12,19 @@ class Genetic{
   }
   float getScore(ArrayList<Float> items){
     float value = 0;
-    for(int i = 0; i < items.size(); i++){
+    if(getWeight(items)<5000){
+      for(int i = 0; i < items.size(); i++){
       value += items.get(i)*iList.listOfItems.get(i).value;
+      }
     }
     return value;
   }
+  
+  float getWeight(ArrayList<Float> g){
+  float lightBack = 0;
+  for(int i = 0; i<g.size();i++){
+  lightBack += g.get(i)*iList.listOfItems.get(i).weigth;
+  }
+  return lightBack;
+}
 }

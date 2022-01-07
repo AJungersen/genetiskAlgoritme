@@ -1,22 +1,10 @@
-class Generation{//used to keep track of the generations in order to plot it later on
-
-  int generationNumber = 0;
-  
-  Generation(){
-  
+class Generation{
+  ArrayList<Genetic> generationX;
+  Generation(ArrayList<Genetic> G){
+    generationX = G;
   }
-  
-  void newGeneration(){
-    generationNumber++;
+  float sortScore(){
+    float sorted;
+    
   }
-  
-  ArrayList<Item> currentGenerationBackPacks(){
-    ArrayList<Item> backPacks = new ArrayList<Item>();
-    
-    
-    
-    return backPacks;
-  }
-  
-  
 }
