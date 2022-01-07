@@ -13,6 +13,7 @@ class Generation{
     }
     toSort.sortReverse();
     sorted = toSort.get(50);
+    highScore = toSort.get(0);
     return sorted;
   }
 }
