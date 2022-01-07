@@ -1,6 +1,6 @@
 class Generation{
   ArrayList<Genetic> generationX;
-  float highScore;
+  float highScore; //Denne generations bedste resultat
   Generation(ArrayList<Genetic> G){
     generationX = G;
   }

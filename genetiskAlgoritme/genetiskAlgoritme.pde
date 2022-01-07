@@ -1,6 +1,6 @@
 float itemNumber = 24;
 ItemList iList = new ItemList();
-ArrayList<Generation> generation = new ArrayList();
+ArrayList<Generation> generation = new ArrayList(); //liste over alle generationer
 Graphics start = new Graphics();
 void setup(){
 size(600,600);
