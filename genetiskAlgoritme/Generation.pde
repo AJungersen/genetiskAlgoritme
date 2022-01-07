@@ -4,6 +4,7 @@ class Generation{
   Generation(ArrayList<Genetic> G){
     generationX = G;
   }
+
   float sortScore(){
     float sorted = 0;
     FloatList toSort = new FloatList();
