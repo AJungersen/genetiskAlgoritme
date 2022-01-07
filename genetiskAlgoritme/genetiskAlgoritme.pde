@@ -3,7 +3,7 @@ ItemList iList = new ItemList();
 ArrayList<Generation> generation = new ArrayList(); //liste over alle generationer
 Graphics start = new Graphics();
 void setup(){
-size(600,600);
+size(900,600);
 ArrayList<Genetic> startGene = new ArrayList();
 for(int i = 0; i < 500; i++){
   ArrayList<Float> f = new ArrayList();
@@ -20,6 +20,7 @@ start.drawButton();
 }
 
 void mouseClicked(){
+  println(mouseX + " " + mouseY);
   if(mouseX < 250 && mouseY > 550){
   //code for starting calculations
   println("button clicked");
