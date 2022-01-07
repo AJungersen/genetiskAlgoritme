@@ -19,6 +19,10 @@ void draw(){
 start.drawButton();
 evaluateGen(generation.get(generation.size()-1));
 
+for(int i = 0; i < 2; i++){
+println(generation.get(i).highScore);
+}
+
 }
 
 void mouseClicked(){
