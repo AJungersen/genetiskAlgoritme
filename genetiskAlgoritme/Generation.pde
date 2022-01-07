@@ -1,5 +1,6 @@
 class Generation{
   ArrayList<Genetic> generationX;
+  float highScore;
   Generation(ArrayList<Genetic> G){
     generationX = G;
   }

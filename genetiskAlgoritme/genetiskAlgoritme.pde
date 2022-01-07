@@ -4,7 +4,15 @@ ArrayList<Generation> generation = new ArrayList();
 Graphics start = new Graphics();
 void setup(){
 size(600,600);
-
+ArrayList<Genetic> startGene = new ArrayList();
+for(int i = 0; i < 500; i++){
+  ArrayList<Float> f = new ArrayList();
+  for(int m = 0; m < itemNumber; m++){
+    f.add(random(2));
+  }
+  startGene.add(new Genetic(f));
+}
+generation.add(new Generation(startGene));
 }
 
 void draw(){
