@@ -20,11 +20,11 @@ void mouseClicked(){
   
 
 public void evaluateGen(Generation R){//tager en arrayliste med 200 objekter, og laver en ny arrayliste med de bedste 50 objekter
-  float limitValue = R.sortScore();
+  //float limitValue = R.sortScore();
   for(int i = 0; i < R.generationX.size(); i++){
-    if(R.generationX.get(i).score>limitValue){
+    //if(R.generationX.get(i).score>limitValue){
         
-    }
+   // }
   }
 }
 

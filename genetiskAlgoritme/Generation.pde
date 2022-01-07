@@ -3,8 +3,8 @@ class Generation{
   Generation(ArrayList<Genetic> G){
     generationX = G;
   }
-  float sortScore(){
+  /*float sortScore(){
     float sorted;
     
-  }
+  }*/
 }
