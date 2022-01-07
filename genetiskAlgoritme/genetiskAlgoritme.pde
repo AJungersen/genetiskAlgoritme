@@ -17,6 +17,8 @@ generation.add(new Generation(startGene));
 
 void draw(){
 start.drawButton();
+evaluateGen(generation.get(generation.size()-1));
+
 }
 
 void mouseClicked(){
@@ -28,12 +30,14 @@ void mouseClicked(){
   
 
 public void evaluateGen(Generation R){//tager en arrayliste med 200 objekter, og laver en ny arrayliste med de bedste 50 objekter
-  //float limitValue = R.sortScore();
+  ArrayList<Genetic> winners = new ArrayList();
+  float limitValue = R.sortScore();
   for(int i = 0; i < R.generationX.size(); i++){
-    //if(R.generationX.get(i).score>limitValue){
-        
-   // }
+    if(R.generationX.get(i).score>limitValue){
+      winners.add(R.generationX.get(i));
+   }
   }
+  generateGeneration(winners);
 }
 
 void generateGeneration(ArrayList<Genetic> W){//Input list of 50 best. Outputs 200 new more accurate backpacks.

@@ -12,7 +12,7 @@ class Genetic{
   }
   float getScore(ArrayList<Float> items){
     float value = 0;
-    if(getWeight(items)<5000){
+    if(getWeight(items)<50000){
       for(int i = 0; i < items.size(); i++){
       value += items.get(i)*iList.listOfItems.get(i).value;
       }
