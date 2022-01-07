@@ -7,7 +7,7 @@ class Genetic{
   }
   public ArrayList<Float> makeNew(){
     ArrayList<Float> newGen = itemList;
-    newGen.set(random(int(newGen.size()),random(2));
+    newGen.set(int(random(newGen.size())),new Float(random(2)));
     return newGen;
   }
   float getScore(ArrayList<Float> items){
