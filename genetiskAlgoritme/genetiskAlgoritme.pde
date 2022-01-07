@@ -1,15 +1,22 @@
 float itemNumber = 24;
 ItemList iList = new ItemList();
 ArrayList<Generation> generation = new ArrayList();
+Graphics start = new Graphics();
 void setup(){
+size(600,600);
 
 }
 
 void draw(){
-println("Hello world");
+start.drawButton();
 }
 
-
+void mouseClicked(){
+  if(mouseX < 250 && mouseY > 550){
+  //code for starting calculations
+  println("button clicked");
+  }
+}
   
 
 public void evaluateGen(Generation R){//tager en arrayliste med 200 objekter, og laver en ny arrayliste med de bedste 50 objekter
