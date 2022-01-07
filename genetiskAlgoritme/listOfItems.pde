@@ -2,7 +2,7 @@ class ItemList{
 
   ArrayList<Item> listOfItems = new ArrayList<Item>();//arraylist containing all possible objects
   
-  void itemList(){
+  ItemList(){//navn, pris, vægt
   listOfItems.add(new Item("kort", 150, 90));
   listOfItems.add(new Item("kompas", 35, 130));
   listOfItems.add(new Item("vand", 200, 1530));
