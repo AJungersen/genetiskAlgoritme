@@ -5,7 +5,7 @@ class Genetic{
     itemList = iList;
     score = 0;
   }
-  public ArrayList<Item> makeNew(){
+  public ArrayList<Float> makeNew(){
     ArrayList<Float> newGen = itemList;
     newGen.set(random(int(newGen.size()),random(2));
     return newGen;
