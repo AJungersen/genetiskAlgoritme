@@ -41,6 +41,10 @@ class Graphics{
   text("Nøjagtighed", 10, 425);
   line(0, 550, 900, 550);
   
+  //funktion
+  for(int i = 0; i < generation.size(); i = i+10){
+    circle(100+i/2,500-generation.get(i).highScore/10,10);
+  }
   }
   
 }

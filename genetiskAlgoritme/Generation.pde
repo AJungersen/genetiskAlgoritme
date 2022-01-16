@@ -13,7 +13,8 @@ class Generation{
       toSort.append(generationX.get(i).score);
     }
     toSort.sortReverse();
-    sorted = toSort.get(50);
+    sorted = toSort.get(20);
+    println("sorteret" + toSort);
     highScore = toSort.get(0);
     return sorted;
   }
