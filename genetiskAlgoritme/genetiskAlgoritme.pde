@@ -5,7 +5,7 @@ Graphics start = new Graphics();
 void setup(){
 size(900,600);
 ArrayList<Genetic> startGene = new ArrayList();
-for(int i = 0; i < 500; i++){
+for(int i = 0; i < 50; i++){
   FloatList f = new FloatList();
   for(int m = 0; m < itemNumber; m++){
     f.append(float(int(random(2))));
@@ -36,33 +36,31 @@ void mouseClicked(){
 public void evaluateGen(Generation R){//tager en arrayliste med 200 objekter, og laver en ny arrayliste med de bedste 50 objekter
   ArrayList<Genetic> winners = new ArrayList();
   float limitValue = R.sortScore();  for(int i = 0; i < R.generationX.size(); i++){
-    if(R.generationX.get(i).score >= limitValue){
+    if(R.generationX.get(i).score >= limitValue && winners.size()<55){
       winners.add(R.generationX.get(i));
    }
   }
-  print("winners");
-  for(int i = 0; i < winners.size();i++){
-    print(winners.get(i).score + " ");
-  }
-  println();
   generateGeneration(winners);
 }
 
 void generateGeneration(ArrayList<Genetic> W){//Input list of 50 best. Outputs 200 new more accurate backpacks.
   ArrayList<Genetic> next = new ArrayList();
-  for(int i = 0; i < W.size(); i++){
-    for(int m = 0; m < 10; m++){
+  for(int i = 0; i < W.size(); i++){ //<>//
+    //println("først " + W.get(i).itemList);
+    next.add(new Genetic(W.get(i).itemList));
+    for(int m = 0; m < 5; m++){
       next.add(new Genetic(makeNew(W.get(i).itemList)));
     }
-  }
+    //println("efter " + next.get(next.size()-1).itemList);
+    //println("før " + W.get(i).itemList);
+  } //<>//
   generation.add(new Generation(next));
 }
 public FloatList makeNew(FloatList iList){
-    FloatList newGen = iList;
-    for(int i = 0; i < 1; i++){
-      println("før   " + newGen);
-      newGen.set(int(random(newGen.size())),new Float(int(random(2))));
-      println("efter " + newGen);
+    FloatList newGen;
+    newGen = (FloatList)iList.copy();
+    for(int i = 0; i < 4; i++){
+      newGen.set(int(random(24)),new Float(int(random(2))));
     }
     return newGen;
   }

@@ -43,7 +43,7 @@ class Graphics{
   
   //funktion
   for(int i = 0; i < generation.size(); i = i+10){
-    circle(100+i/2,500-generation.get(i).highScore/10,10);
+    circle(100+i,500-(generation.get(i).highScore-800)/2,10);
   }
   }
   
