@@ -4,7 +4,7 @@ class Genetic{
   Genetic(FloatList iList){
     itemList = iList;
     score = getScore(iList);
-  }
+  } 
   float getScore(FloatList items){
     float value = 0;
     if(getWeight(items)<5000){
