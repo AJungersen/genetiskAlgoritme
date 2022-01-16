@@ -22,6 +22,18 @@ class Graphics{
   rect(sulx, suly, sbrx, sbry);
   fill(255);
   textSize(25);
+  if(buttonClicked == true){
+      for(int i = 0; i < generation.get(generation.size()-1).generationX.size(); i++){
+        for(int n = 0; n < generation.get(generation.size()-1).generationX.get(i).itemList.size(); n++){
+          boolean b = false;
+          if(generation.get(generation.size()-1).generationX.get(i).itemList.get(n) == 1 && b == false){
+          display = iList.listOfItems.get(n).itemName + ", ";
+          }else{
+          display += iList.listOfItems.get(n).itemName + ", ";
+        }
+      }
+    }
+  }
   text(display, 10, 100);
   
   //titel

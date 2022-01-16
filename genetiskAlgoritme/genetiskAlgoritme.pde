@@ -18,10 +18,11 @@ generation.add(new Generation(startGene));
 }
 
 void draw(){
+if(buttonClicked == true){  
 evaluateGen(generation.get(generation.size()-1));
 
 println(generation.get(generation.size()-2).highScore);
-
+}
 start.drawButton();
 }
 
