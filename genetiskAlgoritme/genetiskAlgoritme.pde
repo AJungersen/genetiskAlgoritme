@@ -1,3 +1,4 @@
+boolean buttonClicked = false;
 float itemNumber = 24;
 ItemList iList = new ItemList();
 ArrayList<Generation> generation = new ArrayList(); //liste over alle generationer
@@ -28,6 +29,7 @@ void mouseClicked(){
   println(mouseX + " " + mouseY);
   if(mouseX < 250 && mouseY > 550){
   //code for starting calculations
+  buttonClicked = true;
   println("button clicked");
   }
 }

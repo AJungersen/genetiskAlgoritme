@@ -40,11 +40,12 @@ class Graphics{
   text("Generationer", 385, 548);
   text("Nøjagtighed", 10, 425);
   line(0, 550, 900, 550);
-  
+  if(buttonClicked == true){
   //funktion
   for(int i = 0; i < generation.size(); i = i+10){
     circle(100+i,500-(generation.get(i).highScore-800)/2,10);
-  }
+      }
+    }
   }
   
 }
