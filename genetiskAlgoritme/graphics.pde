@@ -27,9 +27,11 @@ class Graphics{
         for(int n = 0; n < generation.get(generation.size()-1).generationX.get(i).itemList.size(); n++){
           boolean b = false;
           if(generation.get(generation.size()-1).generationX.get(i).itemList.get(n) == 1 && b == false){
+          //display = generation.HSIarray[i];
           display = iList.listOfItems.get(n).itemName + ", ";
           }else{
           display += iList.listOfItems.get(n).itemName + ", ";
+          //display = generation.HSIarray;
         }
       }
     }
